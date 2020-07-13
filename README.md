@@ -1,17 +1,17 @@
-This is sample POC to demostrate How to integrate RabbitMQ with Node Application
+This is sample POC to demonstrate How to integrate RabbitMQ with Node Application
 
-## Softwares Required
+## Software’s Required
 
-Below Softwares needs to be installed before you procceed 
+Below Software’s needs to be installed before you proceed 
 
 1. Node v12 above
-2. RabbitMQ mangement - Which is Message broker which holds and transport sms
+2. RabbitMQ management - Which is Message broker which holds and transport sms
 
 To check ~ brew services list    
 
 Version 3.8.2
 
-if your not installed - run  ~brew install rabbitmq
+if you’re not installed - run  ~brew install rabbitmq
 
 ### `brew services start rabbitmq`
 
@@ -32,7 +32,7 @@ default userName and password is guest both
 
 To check login to http://localhost:15672 and check . So, now it's working fine. 
 
-Let's move to create recevier.js to get sms from sender
+Let's move to create receiver.js to get sms from sender
 
 Run again 
 
@@ -43,4 +43,4 @@ and check on again by check login to http://localhost:15672 and check . if data 
 noAck: true , Will helps us to delete the sms if that has been consumed.
 
 
-This is just a sample Example , In real time there will be workers to process messages and send it to recevier...
+This is just a sample Example , In real time there will be workers to process messages and send it to receiver...
